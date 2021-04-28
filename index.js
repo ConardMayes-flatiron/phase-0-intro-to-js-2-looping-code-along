@@ -1,49 +1,13 @@
-// Code your solutions in this file
-
-/*
-const gifts = ["teddy bear", "drone", "doll"];
-
-function wrapGifts(gifts) {
-  for (let i = 0; i < gifts.length; i++) {
-    console.log(`Wrapped ${gifts[i]} and added a bow!`);
-    debugger;
-  }
-
-  return gifts;
-}
-
-wrapGifts(gifts);
-*/
-
-function writeCards(namesList,event) {
-    let newArray = [];
-    for (let i=0; i < namesList.length;i++){
-        
-        newArray[i]=`Thank you, ${namesList[i]}, for the wonderful ${event} gift!`;
-        
-
+function writeCards(names, event){
+    const newList =[];
+    for (let n=0; n < names.length; n++){
+        newList.push(`Thank you, ${names[n]}, for the wonderful ${event} gift!`);
     }
-
-    return newArray;
-
-
+    return newList;
 }
 
-
-
-function countDown(n){
-    while (n>=0){
-        console.log(n);
-        n--;
-
-
+function countDown(i){
+    while (i >= 0){
+        console.log(i--);
     }
-
 }
-
-
-
-
-// const dudes = ['Sam', 'Max', 'Bro'];
-
-//writeCards(dudes,"Wookie Life Day");
